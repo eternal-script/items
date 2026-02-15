@@ -162,6 +162,12 @@ local module = {
             Rarity = "Limited";
             Unpurchasable = true
         };
+        ["Candle of Compassion"] = {
+            CustomDescription = "???";
+            OnlyBuyOne = true;
+            Price = 214;
+            Rarity = "Limited"
+        };
         ["Candy Bucket"] = {
             CustomDescription = "Trick or Treat!";
             Price = math.huge;
@@ -192,6 +198,10 @@ local module = {
         ["Christmas Music Box"] = {
             OnlyBuyOne = true;
             Rarity = "Limited"
+        };
+        ["Clearcast Totem"] = {
+            Price = 1000;
+            Rarity = "Unusual"
         };
         ["Cliff Keystone"] = {
             CustomDescription = "A keystone of unknown purpose.";
@@ -252,6 +262,31 @@ local module = {
             OnlyBuyOne = true;
             Price = math.huge;
             Rarity = "Special";
+            Unpurchasable = true
+        };
+        ["Cupid's Core"] = {
+            OnlyBuyOne = true;
+            Price = math.huge;
+            Rarity = "Limited";
+            Unpurchasable = true
+        };
+        ["Cupid's Handle"] = {
+            OnlyBuyOne = true;
+            Price = math.huge;
+            Rarity = "Limited";
+            Unpurchasable = true
+        };
+        ["Cupid's Promise"] = {
+            CustomDescription = "A promise of love. Claim your rewards on Valentine's Day!";
+            OnlyBuyOne = true;
+            Price = math.huge;
+            Rarity = "Limited";
+            Unpurchasable = true
+        };
+        ["Cupid's Wings"] = {
+            OnlyBuyOne = true;
+            Price = math.huge;
+            Rarity = "Limited";
             Unpurchasable = true
         };
         ["Cursed Egg"] = {
@@ -519,6 +554,13 @@ local module = {
             Rarity = "Mythical";
             purchasable = false
         };
+        ["Heartbreak Cake"] = {
+            Icon = "rbxassetid://1";
+            LocalCurrency = "Chocolates";
+            OnlyBuyOne = true;
+            Price = 1000;
+            Rarity = "Limited"
+        };
         ["Holiday Ham"] = {
             CustomDescription = "[Black Market Exclusive]";
             OnlyBuyOne = true;
@@ -622,6 +664,10 @@ local module = {
         ["Lobster Roll"] = {
             Price = math.huge;
             Rarity = "Rare"
+        };
+        ["Love Nuke"] = {
+            Price = math.huge;
+            Rarity = "Limited"
         };
         ["Lucid Reel"] = {
             Price = math.huge;
@@ -793,6 +839,14 @@ local module = {
             Rarity = "Exotic";
             Unpurchasable = true
         };
+        ["Penny's Love Letter"] = {
+            CustomDescription = "A love letter from Penny to Oddie.";
+            OnlyBuyOne = true;
+            Price = math.huge;
+            QuestLink = "ValentidesReunite5";
+            Rarity = "Limited";
+            Unpurchasable = true
+        };
         ["Physpax Gun"] = {
             DEV = true;
             Price = math.huge;
@@ -803,6 +857,11 @@ local module = {
             OnlyBuyOne = true;
             Price = 5000;
             Rarity = "Rare"
+        };
+        ["Pink Blossom"] = {
+            Price = math.huge;
+            Rarity = "Limited";
+            Unpurchasable = true
         };
         Pizza = {
             CustomDescription = "[Black Market Exclusive]";
@@ -855,6 +914,11 @@ local module = {
             Icon = "rbxassetid://122276989950222";
             Price = math.huge;
             Rarity = "Exotic"
+        };
+        ["Red Blossom"] = {
+            Price = math.huge;
+            Rarity = "Limited";
+            Unpurchasable = true
         };
         ["Red Frightful Skull"] = {
             Price = math.huge;
@@ -916,6 +980,16 @@ local module = {
             Price = math.huge;
             Rarity = "Legendary";
             Unpurchasable = true
+        };
+        ["Scoria Armor"] = {
+            BestiaryRequirement = {
+                Island = "Scoria Reach";
+                Requirement = 20
+            };
+            Icon = "rbxassetid://118576033360101";
+            OnlyBuyOne = true;
+            Price = 75000;
+            Rarity = "Cataclysmic"
         };
         ["Scylla Hunt Totem"] = {
             Icon = "rbxassetid://92270118461292";
@@ -1326,6 +1400,18 @@ local module = {
             Rarity = "Exotic";
             Unpurchasable = true
         };
+        ["Whirlpool Flush"] = {
+            CustomDescription = "Flush them down the drain.";
+            DEV = true;
+            Price = math.huge;
+            Rarity = "Special";
+            Unpurchasable = true
+        };
+        ["White Blossom"] = {
+            Price = math.huge;
+            Rarity = "Limited";
+            Unpurchasable = true
+        };
         Windows = {
             Price = math.huge;
             Rarity = "Rare"
@@ -1390,12 +1476,14 @@ local module = {
         Fischmas25_Elf_Stockings = {"Stocking"};
         Fischmas25_Elf_WrappingPaper = {"Wrapping Paper"};
         Fischmas25_Santa_PresentDelivery = {"Someone's Present"};
+        ValentidesReunite5 = {"Penny's Love Letter"};
     };
     Rarities = {
         [1] = "Trash";
         [10] = "Limited";
         [11] = "Developer";
         [12] = "Mirror";
+        [13] = "Divine Secret";
         [2] = "Common";
         [3] = "Uncommon";
         [4] = "Unusual";
@@ -1408,6 +1496,7 @@ local module = {
     RarityColours = {
         Cataclysmic = "1, 1, 1";
         Common = "0.556863, 0.733333, 0.74902";
+        ["Divine Secret"] = "1, 1, 1";
         Exotic = "1, 1, 1";
         Extinct = "1, 0.698039, 0.698039";
         Legendary = "0.941176, 0.709804, 0.427451";
@@ -1426,8 +1515,8 @@ local module = {
     };
 
     -- Системные поля
-    ToHex = "function: 0xa22f860ac408a4d0";
-    ToInteger = "function: 0x30e336137d01cbf0";
+    ToHex = "function: 0x1fdb15b8a9597828";
+    ToInteger = "function: 0x9931ce3099fa5ce8";
 }
 
 return module
